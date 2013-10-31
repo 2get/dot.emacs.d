@@ -1,0 +1,8 @@
+;; 編集時 buffer 再読み込み
+(global-auto-revert-mode 1)
+
+;; yes or now を y or n
+(fset 'yes-or-no-p' y-or-n-p)
+
+;; ファイル末尾の改行がなければ追加
+(setq require-final-newline t)

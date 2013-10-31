@@ -1,0 +1,5 @@
+(require 'popwin)
+(setq display-buffer-function 'popwin:display-buffer)
+;(setq popwin:popup-window-position 'bottom)
+(setq popwin:popup-window-height 0.5)
+(define-key global-map (kbd "C-x p") 'popwin:display-last-buffer)
