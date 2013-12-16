@@ -16,3 +16,10 @@
 (global-set-key (kbd "C-x &") 'kill-buffer)
 
 (define-key global-map (kbd "C-2") 'set-mark-command)
+
+;; 範囲を指定してインデント
+(global-set-key (kbd "C-c i") 'indent-region)
+;; 範囲を指定してコメントアウト
+(global-set-key (kbd "C-c c") 'comment-region)
+;; 範囲を指定してコメント解除
+(global-set-key (kbd "C-c u") 'uncomment-region)
